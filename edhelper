@@ -1,0 +1,13 @@
+#!/bin/sh
+read -p "src/" file
+if [ -n "${file}" ]; then
+nano "src/"$file
+fi
+make clean
+rm bin/*
+make
+make iso
+if [ $? -eq 0 ]; then
+qemu-system-i386 -cdrom bin/os.iso
+fi
+xdotool type ./edhelper
