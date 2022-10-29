@@ -1,0 +1,25 @@
+# Binaries, can be extremely large thus makes it hard to upload
+bin/
+*.out
+*.bin
+*.iso
+
+# Anything temporary used in tmp/
+tmp/
+
+# Object files
+*.o
+
+# File backups
+*.BAK
+*.bak
+*.save
+
+# Logs
+*.log
+
+# Core dumps
+*.core
+
+# Don't use .gitkeep files to upload empty folders, the Makefile does everything for you.
+.gitkeep
